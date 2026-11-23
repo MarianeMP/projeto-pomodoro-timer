@@ -1,0 +1,80 @@
+  <!doctype html>
+  <html lang="pt-BR">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Pomodoro Timer</title>
+    </head>
+    <body>
+      <div class="box">
+        <div class="container">
+          <img class="pomodoro" src="images/pomodoro.jpg" alt="Imagem tomate" />
+
+          <h1>Pomodoro Timer</h1>
+        </div>
+
+        <div id="pomodori">
+          <p>Qtd. de pomodori:</p>
+
+          <p id="qtd-pomodori">0</p>
+        </div>
+        <div>
+          <button id="btn-info">
+            Como funciona
+            <img src="images/question_mark.png" width="24" height="24" />
+          </button>
+          <dialog id="info">
+            <ul>
+              <li>
+                Pomodoro significa tomate em italiano e faz referência ao tempo
+                durante o qual você pode fazer determinada tarefa.
+              </li>
+              <li>
+                Ao clicar no botão iniciar, você acionará a contagem de 25 minutos
+                para realizar uma tarefa.
+              </li>
+              <li>
+                Ao terminar a contagem, você terá finalizado um pomodoro, que será
+                adicionado na quantidade de pomodori.
+              </li>
+              <li>
+                Então, o tempo de descanso de 5 minutos será automaticamente
+                acionado.
+              </li>
+
+              <li>
+                Ao completar duas horas (4 pomodori), é acionado um tempo de
+                descanso de 30 minutos e o ciclo é concluído.
+              </li>
+            </ul>
+            <button id="fechar-info">Fechar</button>
+          </dialog>
+
+          <button id="btn-iniciar">
+            Iniciar Timer
+            <img src="images/play_circle.png" width="24" height="24" />
+          </button>
+        </div>
+        <div>
+          <h2>Tempo restante para sua tarefa:</h2>
+          <img src="images/alarm.png" alt="ícone relógio" />
+          <p id="tempo-restante-txt"></p>
+          <p id="tempo-restante">0 minutos 0 segundos</p>
+        </div>
+        <div>
+          <h2>Tempo de Descanso:</h2>
+          <img src="images/alarm.png" alt="ícone relógio" />
+          <p id="tempo-descanso">0 minutos 0 segundos</p>
+        </div>
+
+        <dialog id="tempo-extra">
+          <p class="tempo-extra-dialog">
+            Tempo de Descanso Extra! Descanse 30 minutos!
+          </p>
+          <button id="fechar-tempo-extra">Fechar</button>
+        </dialog>
+      </div>
+      <script src="script.js"></script>
+    </body>
+  </html>

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e9fdc4;
+  margin: 0;
+  text-align: center;
+}
+
+.box {
+  background-color: #ffffff;
+  width: min(75%, 800px); 
+  margin: 0 auto; 
+  padding: 1.5rem;
+  border: 1px solid brown;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Boogaloo", cursive, sans-serif;
+  font-size: clamp(2rem, 5vw, 3.125rem);
+  font-weight: 400; 
+  line-height: 1.1;
+}
+
+.pomodoro {
+  display: block;
+  max-width: 115px;
+  width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0;
+}
+
+dialog {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2;
+    text-align: justify;
+
+}
+
+
+#info ul {
+   list-style: disc;
+}
+.pomodori, p{
+    font-family:"Quantico", sans-serif;
+    font-weight:bold;
+    background-color: #fc251e33;
+}
+
+#qtd-pomodori, #tempo-restante, #tempo-descanso {
+     font-family: "Quantico", sans-serif;
+     font-size: 1.8rem;
+}
+
+button {
+  font-family: "Boogaloo", cursive, sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 0.03em;
+  padding: 0.65rem 1.4rem;
+  border: 2px solid brown;
+  border-radius: 10px;
+  background-color: #fff8f5;
+  color: brown;
+  cursor: pointer;
+  transition: transform 0.12s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  background-color: #fce8e0;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus-visible {
+  outline: 3px solid #d9534f;
+  outline-offset: 2px;
+}
+
+#btn-iniciar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tempo-extra-dialog {
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 2;
+    text-align: justify;
+
+}
+
