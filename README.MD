@@ -1,7 +1,7 @@
     # Temporizador utilizando a técnica Pomodoro
-Aplicação web simples em JavaScript puro que executa um contador regressivo, alternando entre tempo para realizar a tarefa e tempos de descanso, utilizando a técnica Pomodoro.
+Aplicação web simples em JavaScript que executa um contador regressivo, alternando entre tempo para realizar a tarefa e tempos de descanso, utilizando a técnica Pomodoro.
 
-![Preview da Aplicação](./docs/preview.png)
+[Página da Aplicação](https://marianemp.github.io/projeto-pomodoro-timer/)
 
 ## Funcionalidades
 
